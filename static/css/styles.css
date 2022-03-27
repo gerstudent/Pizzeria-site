@@ -1,0 +1,387 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+  color: black;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 28px;
+}
+
+section {
+  padding-top: 40px  
+}
+
+p {
+  margin: 0;
+}
+
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto; 
+}
+
+.choise {
+  margin-top: 60px;
+}
+
+a { 
+  text-decoration: none;
+  color: #fff;
+} 
+.namecom {
+  font-size: 35px;
+  font-weight: 600;
+  padding-left: 50px;
+  font-family: "Montserrat", Roboto, Lato, Noto Sans, Arial, sans-serif;
+
+}
+.navbar-brad img {
+  width: 100px;
+}
+
+.navbar-nav li {
+  padding: 20px;
+}
+.navbar-nav a {
+  color: #222;
+  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+
+
+/*
+header {
+    position: fixed; 
+    left: 0; right: 0; /
+    top: 0; 
+    padding: 10px; 
+    background: #007765; 
+    color: #fff;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-weight: 100px;
+    font-size: 15px;
+
+}
+
+.img-header {
+  width: 150px;
+  height: 100px;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+header h2 {
+  float: right;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 50px;
+
+}
+*/
+.block-inner {
+    padding: 10px 0px;
+}
+
+.block-header-white {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.block-header-white h3 {
+    font-size: 1.8em;
+    color: #971313;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-weight: 300;
+    line-height: 1.0;
+}
+
+.block-header-white h2 {
+    font-size: 3.0em;
+    color: #121619;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.0;
+    margin: 0;
+    padding: 0px 0 30px 0;
+}
+
+/* =================================== */
+/*  14. Footer-Area
+/* =================================== */
+
+.footer {
+  background: #740B0B  none repeat scroll 0 0;
+  padding: 50px 0 38px;
+} 
+
+.footer-title {
+  border-bottom: 1px solid #fff;
+}
+
+.footer-title .desc {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul.footer-content {
+  margin-left: 15px;
+  margin-top: 15px;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+ul.footer-content li a {
+  color: #ddd;
+  display: block;
+  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 35px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+ul.footer-content li a:hover {
+  color: #e95668;
+}
+.footer-content.box-information {
+  margin-left: 0;
+}
+ul.footer-content.box-information li {
+  color: #ddd;
+  list-style: outside none none;
+  min-height: 40px;
+}
+ul.footer-content.box-information li i {
+  color: #e95668;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 25px;
+}
+ul.footer-content.box-information li a {
+  color: #26acce;
+}
+}
+/* =================================== */
+/*  Social-icons
+/* =================================== */
+
+.social-icons {
+  text-align: center;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:40px;
+  height:40px;
+  margin-right: 3px;
+}
+/* =================================== */
+/*  Footer-Area
+/* =================================== */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+
+  .div {
+    position: relative;
+    width: 400px;
+    display: block;
+  }
+  .div:before {
+    
+  }
+
+  .footer-text {
+    flex-wrap: wrap;
+  }
+  .footer-text p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.delivery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deliv {
+    width: 20%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.deliv .title {
+    margin: 0px 0px 5px;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #BD0F0F;
+    text-transform: uppercase;
+}
+
+.deliv .p {
+    margin: 0px 0px 50px;
+    font-size: 16px;
+}
+
+
+
+article {
+    display: block;
+}
+
+/* =================================== */
+/* Pizza-card
+/* =================================== */
+.container-pizz {
+  max-width: 1200px;
+  width:  100%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.pizzas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.pizzas img {
+  display: block;
+  width: 100%;
+}
+
+.pizza {
+  text-align: center;
+  flex-basis: 33%;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.pizza-name {
+  margin: 0 0 10px 0;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 28px;
+  color: #000000;
+  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+}
+
+
+/* ///////////////// */
+.product-list {
+   background: #fafafa;
+   padding: 15px 0;
+}
+
+.price {
+   font-size: 20px;
+   font-weight: 500;
+   font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+   color: black;
+   display: block;
+   margin-bottom: 12px;
+}
+
+.button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 4px 12px 4px 12px;
+   background: #cccccc;
+   color: white;
+   font-size: 18px;
+   line-height: 28px;
+   transition: .3s ease-in;
+}
+.product-item:hover .button {
+   background: #740B0B;
+   color: white;
+    text-decoration: none;
+}
+.pizza:hover .button {
+   background: #740B0B;
+   color: white;
+  text-decoration: none;
+
+}
