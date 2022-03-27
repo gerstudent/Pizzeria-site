@@ -385,3 +385,16 @@ article {
   text-decoration: none;
 
 }
+
+.acc {
+    font-size: 1.1em !important;
+    background-color: #3458;
+    padding: 7px;
+    border-radius: 7px;
+}
+.cart {
+    font-size: 1.1em !important;
+    background-color: #3458;
+    padding: 7px;
+    border-radius: 7px;
+}
