@@ -1,82 +1,92 @@
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
-  color: black;
-  font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    color: black;
+    font-size: 16px;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 h2 {
-  font-size: 50px;
-  margin-bottom: 60px;
+    font-size: 50px;
+    margin-bottom: 60px;
 }
 
 h3 {
-  font-size: 25px;
-  margin-bottom: 28px;
+    font-size: 25px;
+    margin-bottom: 28px;
 }
 
 section {
-  padding-top: 40px  
+    padding-top: 40px
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }
 
 
 ul, li {
-  display: block;
-  padding: 0;
-  margin: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-  width: 1170px;
-  margin: 0 auto; 
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .choise {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
-a { 
-  text-decoration: none;
-  color: #fff;
-} 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .namecom {
-  font-size: 35px;
-  font-weight: 600;
-  padding-left: 50px;
-  font-family: "Montserrat", Roboto, Lato, Noto Sans, Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 50px;
+    font-family: "Montserrat", Roboto, Lato, Noto Sans, Arial, sans-serif;
 
 }
+
 .navbar-brad img {
-  width: 100px;
+    width: 100px;
 }
 
 .navbar-nav li {
-  padding: 20px;
-}
-.navbar-nav a {
-  color: #222;
-  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
-}
-.nav-link {
-  font-size: 1.1em !important;
+    padding: 20px;
 }
 
+.navbar-nav a {
+    color: #222;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.cart {
+    background-color: #971313;
+    padding: 7px;
+    color: #fff;
+    border-radius: 7px;
+}
 
 
 /*
@@ -144,61 +154,66 @@ header h2 {
 /* =================================== */
 
 .footer {
-  background: #740B0B  none repeat scroll 0 0;
-  padding: 50px 0 38px;
-} 
+    background: #740B0B none repeat scroll 0 0;
+    padding: 50px 0 38px;
+}
 
 .footer-title {
-  border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .footer-title .desc {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 ul.footer-content {
-  margin-left: 15px;
-  margin-top: 15px;
-  padding-left: 0;
-  margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-left: 0;
+    margin-bottom: 10px;
 }
 
 ul.footer-content li a {
-  color: #ddd;
-  display: block;
-  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 35px;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
+    color: #ddd;
+    display: block;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 35px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
 }
+
 ul.footer-content li a:hover {
-  color: #e95668;
+    color: #e95668;
 }
+
 .footer-content.box-information {
-  margin-left: 0;
+    margin-left: 0;
 }
+
 ul.footer-content.box-information li {
-  color: #ddd;
-  list-style: outside none none;
-  min-height: 40px;
+    color: #ddd;
+    list-style: outside none none;
+    min-height: 40px;
 }
+
 ul.footer-content.box-information li i {
-  color: #e95668;
-  float: left;
-  height: 30px;
-  line-height: 30px;
-  width: 25px;
+    color: #e95668;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 25px;
 }
+
 ul.footer-content.box-information li a {
-  color: #26acce;
+    color: #26acce;
 }
 
 /* =================================== */
@@ -206,71 +221,77 @@ ul.footer-content.box-information li a {
 /* =================================== */
 
 .social-icons {
-  text-align: center;
-  }  
-.social-icons li {
-  display:inline-block;
-  list-style-type:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  }
-.social-icons li a {
-  border-bottom: none;
-  }
-.social-icons li img {
-  width:40px;
-  height:40px;
-  margin-right: 3px;
+    text-align: center;
 }
+
+.social-icons li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.social-icons li a {
+    border-bottom: none;
+}
+
+.social-icons li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 3px;
+}
+
 /* =================================== */
 /*  Footer-Area
 /* =================================== */
 
 @media screen and (max-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
+    .container {
+        width: 1140px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
-  .container {
-    width: 960px;
-  }
+    .container {
+        width: 960px;
+    }
 }
 
 @media screen and (max-width: 991px) {
-  .container {
-    width: 720px;
-  }
+    .container {
+        width: 720px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-  .container {
-    width: 540px;
-  }
+    .container {
+        width: 540px;
+    }
 
-  .div {
-    position: relative;
-    width: 400px;
-    display: block;
-  }
-  .div:before {
-    
-  }
+    .div {
+        position: relative;
+        width: 400px;
+        display: block;
+    }
 
-  .footer-text {
-    flex-wrap: wrap;
-  }
-  .footer-text p:nth-child(1) {
-    margin-bottom: 20px;
-  }
+    .div:before {
+
+    }
+
+    .footer-text {
+        flex-wrap: wrap;
+    }
+
+    .footer-text p:nth-child(1) {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 575px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
 }
 
 .delivery {
@@ -302,7 +323,6 @@ ul.footer-content.box-information li a {
 }
 
 
-
 article {
     display: block;
 }
@@ -311,77 +331,79 @@ article {
 /* Pizza-card
 /* =================================== */
 .container-pizz {
-  max-width: 1200px;
-  width:  100%;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 55px;
-  padding-right: 55px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .pizzas {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .pizzas img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .pizza {
-  text-align: center;
-  flex-basis: 33%;
-  padding: 24px;
-  box-sizing: border-box;
-  margin-bottom: 30px;
+    text-align: center;
+    flex-basis: 33%;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 .pizza-name {
-  margin: 0 0 10px 0;
-  margin-top: 12px;
-  font-weight: 600;
-  font-size: 28px;
-  color: #000000;
-  font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    margin: 0 0 10px 0;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
 }
 
 
 /* ///////////////// */
 .product-list {
-   background: #fafafa;
-   padding: 15px 0;
+    background: #fafafa;
+    padding: 15px 0;
 }
 
 .price {
-   font-size: 20px;
-   font-weight: 500;
-   font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
-   color: black;
-   display: block;
-   margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    color: black;
+    display: block;
+    margin-bottom: 12px;
 }
 
 .button {
-   text-decoration: none;
-   display: inline-block;
-   padding: 4px 12px 4px 12px;
-   background: #cccccc;
-   color: white;
-   font-size: 18px;
-   line-height: 28px;
-   transition: .3s ease-in;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 12px 4px 12px;
+    background: #cccccc;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    transition: .3s ease-in;
 }
+
 .product-item:hover .button {
-   background: #740B0B;
-   color: white;
+    background: #740B0B;
+    color: white;
     text-decoration: none;
 }
+
 .pizza:hover .button {
-   background: #740B0B;
-   color: white;
-  text-decoration: none;
+    background: #740B0B;
+    color: white;
+    text-decoration: none;
 
 }
