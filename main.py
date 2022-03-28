@@ -6,8 +6,8 @@ from loginforms import AdminLoginForm, UserLoginForm
 
 app = Flask(__name__)
 
-# работа с базой данных
 app.config['SECRET_KEY'] = 'pizza_smizza secret key'
+# работа с базой данных
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pizza.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
