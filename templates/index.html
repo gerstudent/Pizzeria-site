@@ -1,28 +1,32 @@
 <!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Пицца-шмицца</title>
 <html lang="ru">
 <head>
     <meta charset="utf 8">
     <!--- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --->
     <title>Пицца-шмицца</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel = "stylesheet" href = "../static/css/styles.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 </head>
 
@@ -31,265 +35,258 @@
 <!------------------------------------------------>
 <!--------------------Pizzas---------------------->
 <!------------------------------------------------>
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brad"><img src="../static/img/logo.png" alt="Логотип"></a>
-        <a class="namecom">Пицца-шмицца</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brad"><img src="../static/img/logo.png" alt = "Логотип"></a>
+            <a class="namecom">Пицца-шмицца</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-togg ler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a href="#" class="nav-Link">Главная</a>
-                </li>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-Link">Главная</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="#choise" class="nav-Link">Выбор покупателей</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="#choise" class="nav-Link">Выбор покупателей</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="#menu" class="nav-Link">Меню</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-Link">Меню</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="#deliverya" class="nav-Link">Доставка</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="#deliverya" class="nav-Link">Доставка</a>
+                    </li>
 
-                {% block content %}
-	            {% endblock %}
+                    <li class="nav-item">
+                        <a class="acc">Аккаунт</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="cart">Корзина</a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="cart">Корзина</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div class="block-header-white">
+        <a id = "choise"><h2>Выбор покупателей</h2></a>
     </div>
-</nav>
 
-<div class="block-header-white">
-    <a id="choise"><h2>Выбор покупателей</h2></a>
-</div>
-
-<div class="pizzass">
-    <div class="container-pizz"><br>
-        <div class="pizzas">
-            <div class="pizza">
+    <div class = "pizzass">
+        <div class="container-pizz"><br>
+            <div class="pizzas">
+              <div class="pizza">
                 <img src="../static/img/pizza2.jpg" alt="Пицца">
                 <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
                 </div>
-            </div>
+              </div>
 
-            <div class="pizza">
+              <div class="pizza">
                 <img src="../static/img/pizza-margarita.jpg" alt="Пицца">
                 <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
                 </div>
-            </div>
+              </div>
 
-            <div class="pizza">
+              <div class="pizza">
                 <img src="../static/img/pizza3.png" alt="Пицца">
                 <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
                 </div>
-            </div>
+              </div>
 
-            <div class="pizza">
+              <div class="pizza">
                 <img src="../static/img/pizza4.jpg" alt="Пицца">
                 <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
                 </div>
-            </div>
+              </div>
 
-            <div class="pizza">
+              <div class="pizza">
                 <img src="../static/img/pizza5.png" alt="Пицца">
                 <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
                 </div>
-            </div>
+              </div>
 
-            <div class="pizza">
+              <div class="pizza">
                 <img src="../static/img/pizza6.jpg" alt="Пицца">
                 <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
                 </div>
+              </div>
             </div>
         </div>
-    </div>
-</div>
+      </div>
 <!------------------------------------------------>
 <!-------------------Pizzas----------------------->
 <!------------------------------------------------>
-<div class="block-header-white">
-    <h3>Мы предлагаем</h3>
-    <a id="menu"><h2>Наше меню</h2></a>
-</div>
+    <div class="block-header-white">
+        <h3>Мы предлагаем</h3>
+        <a id = "menu"><h2>Наше меню</h2></a>
+    </div>
 
-<div class="pizzass">
-    <div class="container-pizz"><br>
-        <div class="pizzas">
-            <div class="pizza">
-                <img src="../static/img/pizza2.jpg" alt="Пицца">
-                <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+    <div class = "pizzass">
+        <div class="container-pizz"><br>
+            <div class="pizzas">
+                <div class="pizza">
+                    <img src="../static/img/pizza2.jpg" alt="Пицца">
+                    <div class="product-list">
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="pizza">
-                <img src="../static/img/pizza-margarita.jpg" alt="Пицца">
-                <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                <div class="pizza">
+                    <img src="../static/img/pizza-margarita.jpg" alt="Пицца">
+                    <div class="product-list">
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="pizza">
-                <img src="../static/img/pizza3.png" alt="Пицца">
-                <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                <div class="pizza">
+                    <img src="../static/img/pizza3.png" alt="Пицца">
+                    <div class="product-list">
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="pizza">
-                <img src="../static/img/pizza4.jpg" alt="Пицца">
-                <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                <div class="pizza">
+                    <img src="../static/img/pizza4.jpg" alt="Пицца">
+                    <div class="product-list">
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="pizza">
-                <img src="../static/img/pizza5.png" alt="Пицца">
-                <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                <div class="pizza">
+                    <img src="../static/img/pizza5.png" alt="Пицца">
+                    <div class="product-list">
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="pizza">
-                <img src="../static/img/pizza6.jpg" alt="Пицца">
-                <div class="product-list">
-                    <h3 class="pizza-name">Маргарита</h3>
-                    <span class="price">500 ₽</span>
-                    <a href="" class="button">В корзину</a>
+                <div class="pizza">
+                    <img src="../static/img/pizza6.jpg" alt="Пицца">
+                    <div class="product-list">
+                        <h3 class = "pizza-name">Маргарита</h3>
+                        <span class="price">500 ₽</span>
+                        <a href="" class="button">В корзину</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 <!------------------------------------------------>
 <!-------------Delivery--------------------------->
 <!------------------------------------------------>
+    
+    <div class="container">
+            <div class="block-header-white">
+                <a id = "deliverya"><h2>Доставка и оплата</h2></a>
+            </div>
+        <section class="delivery">
+            <article class="deliv">
+                <h1 class="title">90 минут или пицца бесплатно!</h1>
+                Если мы не успеем доставить пиццу в течение 60 минут, курьер подарит вам сертификат на сумму 500 рублей, которые вы можете потратить при следующем заказе.
+            </article>
 
-<div class="container">
-    <div class="block-header-white">
-        <a id="deliverya"><h2>Доставка и оплата</h2></a>
-    </div>
-    <section class="delivery">
-        <article class="deliv">
-            <h1 class="title">90 минут или пицца бесплатно!</h1>
-            Если мы не успеем доставить пиццу в течение 60 минут, курьер подарит вам сертификат на сумму 500 рублей,
-            которые вы можете потратить при следующем заказе.
-        </article>
+            <article class="deliv">
+                <h1 class="title">Бесплатная доставка каждого 10-го заказа!</h1>
+                <p class="p">Каждый десятый заказ мы доставляем бесплатно в знак благодарности постоянным клиентам. Спасибо, что вы с нами!
+                </p>
+            </article>
 
-        <article class="deliv">
-            <h1 class="title">Бесплатная доставка каждого 10-го заказа!</h1>
-            <p class="p">Каждый десятый заказ мы доставляем бесплатно в знак благодарности постоянным клиентам. Спасибо,
-                что вы с нами!
-            </p>
-        </article>
-
-        <article class="deliv">
+            <article class="deliv">
             <h1 class="title">Мы заботимся о клиентах</h1>
-            <p class="p">Если вас не устроило качество доставки, вы можете обратиться в службу поддержки и оставить
-                отзыв. Мы прислушаемся к вашему мнению и улучшим наш сервис.</p>
-        </article>
+            <p class="p">Если вас не устроило качество доставки, вы можете обратиться в службу поддержки и оставить отзыв. Мы прислушаемся к вашему мнению и улучшим наш сервис.</p>
+            </article>
 
-        <article class="deliv">
+            <article class="deliv">
             <h1 class="title">Доставляем по всей Республике!</h1>
             <p class="p">Мы работаем по всей Республике Татарстан и в скором времени планируем выйти за ее пределы.</p>
-        </article>
-    </section>
-</div>
+            </article>
+        </section>
+    </div>
 
 <!------------------------------------------------>
 <!--------------FOOTER START---------------------->
 <!------------------------------------------------>
-<footer class="footer-area">
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="footer-title">
-                        <a class="desc" href="https://vk.com">О нас</a>
+    <footer class="footer-area">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="footer-title">
+                                <a class = "desc" href = "https://vk.com">О нас</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="footer-title">
+                                <a class = "desc" href = "https://vk.com">Интересное</a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-xs-12 hidden-sm col-md-3">
+                            <div class="footer-title">
+                                <a class = "desc" href = "https://vk.com">Партнерам</a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="footer-title">
+                                <a class = "desc" href = "https://vk.com">Контакты</a>
+                            </div>
+                            <nav>
+                                <ul class="footer-content box-information">
+                                    <li>
+                                        <i class=""></i><p><a href=""><b>pizzashmizza@gmail.com</b></a></p>
+                                    </li>
+                                    <li>
+                                        <i class=""></i>
+                                        <span><b>   8-800-555-35-35</b></span> <br> <span> </span>
+                                    </li>
+
+                                    <ul class="social-icons">
+                                        <li><a href="http://www.facebook.com"><img src='../static/img/facebook.png' alt = "faceboook" /></a></li>
+
+                                        <li><a href="http://www.twitter.com"><img src='../static/img/twitter.png' alt="twitter"/></a></li>
+
+                                        <li><a href="https://web.telegram.org"><img src='../static/img/telegram.png' alt="telegram"/></a></li>
+
+                                        <li><a href="https://vk.com"><img src='../static/img/vkontakte.png' alt="vkontakte"/></a></li>
+                                    </ul>
+                                </ul>   
+                            </nav>       
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="footer-title">
-                        <a class="desc" href="https://vk.com">Интересное</a>
-                    </div>
-
-                </div>
-                <div class="col-xs-12 hidden-sm col-md-3">
-                    <div class="footer-title">
-                        <a class="desc" href="https://vk.com">Партнерам</a>
-                    </div>
-
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="footer-title">
-                        <a class="desc" href="https://vk.com">Контакты</a>
-                    </div>
-                    <nav>
-                        <ul class="footer-content box-information">
-                            <li>
-                                <i class=""></i>
-                                <p><a href=""><b>pizzashmizza@gmail.com</b></a></p>
-                            </li>
-                            <li>
-                                <i class=""></i>
-                                <span><b>   8-800-555-35-35</b></span> <br> <span> </span>
-                            </li>
-
-                            <ul class="social-icons">
-                                <li><a href="http://www.facebook.com"><img src='../static/img/facebook.png'
-                                                                           alt="faceboook"/></a></li>
-
-                                <li><a href="http://www.twitter.com"><img src='../static/img/twitter.png'
-                                                                          alt="twitter"/></a></li>
-
-                                <li><a href="https://web.telegram.org"><img src='../static/img/telegram.png'
-                                                                            alt="telegram"/></a></li>
-
-                                <li><a href="https://vk.com"><img src='../static/img/vkontakte.png'
-                                                                  alt="vkontakte"/></a></li>
-                            </ul>
-                        </ul>
-                    </nav>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
-</body>
+        </footer>
+    </body>
 </html>
