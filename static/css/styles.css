@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
     color: black;
     font-size: 16px;
 }
@@ -18,13 +18,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 60px;
 }
 
 h3 {
     font-size: 25px;
-    margin-bottom: 28px;
+    margin-top: 50px ;
+    margin-bottom: 20px;
 }
 
 section {
@@ -53,14 +54,19 @@ ul, li {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: black;
+}
+
+a:hover {
+    color: #971313;
+    text-decoration: none;
 }
 
 .namecom {
     font-size: 35px;
     font-weight: 600;
     padding-left: 50px;
-    font-family: "Montserrat", Roboto, Lato, Noto Sans, Arial, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
 
 }
 
@@ -74,51 +80,15 @@ a {
 
 .navbar-nav a {
     color: #222;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
 }
 
 .nav-link {
     font-size: 1.1em !important;
 }
 
-.cart {
-    background-color: #FA8E47;
-    padding: 10px;
-    border-radius: 7px;
-}
-
-
-/*
-header {
-    position: fixed; 
-    left: 0; right: 0; /
-    top: 0; 
-    padding: 10px; 
-    background: #007765; 
-    color: #fff;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
-    font-weight: 100px;
-    font-size: 15px;
-
-}
-
-.img-header {
-  width: 150px;
-  height: 100px;
-  margin-left: 30px;
-  margin-right: 50px;
-}
-
-header h2 {
-  float: right;
-  margin: 10px;
-  margin-left: 30px;
-  margin-right: 50px;
-
-}
-*/
 .block-inner {
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .block-header-white {
@@ -131,7 +101,7 @@ header h2 {
 .block-header-white h3 {
     font-size: 1.8em;
     color: #971313;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
     font-weight: 300;
     line-height: 1.0;
 }
@@ -139,13 +109,13 @@ header h2 {
 .block-header-white h2 {
     font-size: 3.0em;
     color: #121619;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
     line-height: 1.0;
     margin: 0;
-    padding: 0px 0 30px 0;
+    padding: 0 0 30px 0;
 }
 
 /* =================================== */
@@ -182,15 +152,11 @@ ul.footer-content {
 ul.footer-content li a {
     color: #ddd;
     display: block;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
     font-size: 14px;
     line-height: 35px;
     text-decoration: none;
     transition: all 0.3s ease 0s;
-}
-
-ul.footer-content li a:hover {
-    color: #e95668;
 }
 
 .footer-content.box-information {
@@ -214,7 +180,11 @@ ul.footer-content.box-information li i {
 ul.footer-content.box-information li a {
     color: #26acce;
 }
-
+.acc {
+    background-color: #BD0F0F;
+    padding: 10px;
+    border-radius: 7px;
+}
 /* =================================== */
 /*  Social-icons
 /* =================================== */
@@ -302,14 +272,14 @@ ul.footer-content.box-information li a {
     width: 20%;
     margin-right: 4%;
     margin-bottom: 20px;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
     font-weight: 500;
     font-size: 16px;
 }
 
 .deliv .title {
-    margin: 0px 0px 5px;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    margin: 0 0 5px;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
     font-weight: 500;
     font-size: 18px;
     color: #BD0F0F;
@@ -317,7 +287,7 @@ ul.footer-content.box-information li a {
 }
 
 .deliv .p {
-    margin: 0px 0px 50px;
+    margin: 0 0 50px;
     font-size: 16px;
 }
 
@@ -329,6 +299,8 @@ article {
 /* =================================== */
 /* Pizza-card
 /* =================================== */
+
+/*
 .container-pizz {
     max-width: 1200px;
     width: 100%;
@@ -360,15 +332,12 @@ article {
 
 .pizza-name {
     margin: 0 0 10px 0;
-    margin-top: 12px;
     font-weight: 600;
     font-size: 28px;
     color: #000000;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
 }
 
-
-/* ///////////////// */
 .product-list {
     background: #fafafa;
     padding: 15px 0;
@@ -377,7 +346,7 @@ article {
 .price {
     font-size: 20px;
     font-weight: 500;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
     color: black;
     display: block;
     margin-bottom: 12px;
@@ -404,5 +373,250 @@ article {
     background: #740B0B;
     color: white;
     text-decoration: none;
+}
+*/
+/*======================================*/
+/* New blocks                           */
+/*======================================*/
+.product-img {
+	width: 265px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+	font-family: 'Merriweather', serif;
+	min-height: 70px;
+}
+
+@media (max-width: 980px){
+	.item-title  {
+		font-size: 1.2rem;
+		min-height: auto;
+	}
+}
+
+.details-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.items {
+	font-family: 'Merriweather', serif;
+	background: #f2ede7;
+	border-radius: 8px;
+	width: 120px;
+	display: flex;
+	font-size: 18px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.items__control {
+	width: 40px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-align: center;
+}
+
+.items__control:hover {
+    background: #BD0F0F;
+    color: #FFF;
+}
+
+.items__current {
+	width: 40px;
+}
+
+/* items--small */
+.items.items--small {
+    width: 90px;
+    font-size: 16px;
+    height: 26px;
+    text-align: center;
+}
+
+.items.items--small .items__control {
+    width: 30px;
+}
+
+.items.items--small .items__current {
+    width: 30px;
+}
+
+.price {
+    text-align: left;
+}
+
+.price__weight {
+    color: #6c757d!important;
+    font-size: 80%;
+    line-height: 1;
+}
+
+.price__currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.btn-outline-warning {
+    color: #BD0F0F;
+    border-color: #BD0F0F;
+}
+
+.btn-outline-warning:hover {
+    color: #FFF;
+    background-color: #BD0F0F;
+    border-color: #BD0F0F;
+}
+
+.cart-item {
 
 }
+
+.cart-item__top {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 15px;
+}
+
+.cart-item__img  {
+
+}
+
+.cart-item__img img {
+    max-width: 100px;
+    height: auto;
+}
+
+.cart-item__desc {
+    padding-top: 15px;
+    padding-left: 15px;
+    max-width: 208px;
+}
+
+.cart-item__title {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cart-item__weight {
+    color: #6c757d!important;
+    font-size: 80%;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.cart-item__details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cart-item__details .price__currency {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.cart-total {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.delivery-cost {
+
+}
+
+.free {
+    color: #0EA107;
+}
+
+.total-price {
+    color: #BD0F0F;
+}
+
+.rouble {
+    color: #BD0F0F;
+}
+
+.none {
+    display: none;
+}
+
+/* ========================*/
+/* Модальное окно          */
+/* ========================*/
+.modname {
+    font-size: 40px;
+
+}
+.modtext {
+    text-align: left;
+}
+.modalDialog {
+    position: fixed;
+    font-family: 'Merriweather', Montserrat, Arial, Open Sans, Roboto, serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
