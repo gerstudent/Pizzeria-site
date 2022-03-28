@@ -1,13 +1,15 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, redirect
+from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 
 from loginforms import AdminLoginForm, UserLoginForm
-from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 # работа с базой данных
+app.config['SECRET_KEY'] = 'pizza_smizza secret key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pizza.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # флаги авторизации админа и пользователя
@@ -20,7 +22,7 @@ USER_FLAG = False
 @app.route('/main')
 def main():
     if USER_FLAG:
-        return render_template('header_logined')
+        return render_template('header_logined.html')
     else:
         return render_template('header_unlogined.html')
 
@@ -78,6 +80,11 @@ def user_login():
         USER_FLAG = True
         return redirect('/')
     return render_template('user_login.html', title='Авторизация', form=form)
+
+
+@app.route('/user_reg', methods=['GET', 'POST'])
+def user_reg():
+    return "Регистрация"
 
 
 # страница пользователя
