@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<li class="nav-item">
+    <a href="/account" class="acc">Аккаунт</a>
+</li>
+
+{% endblock %}

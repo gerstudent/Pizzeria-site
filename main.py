@@ -11,7 +11,10 @@ USER_FLAG = False
 @app.route('/')
 @app.route('/main')
 def main():
-    return render_template('index.html')
+    if USER_FLAG:
+        return render_template('header_logined')
+    else:
+        return render_template('header_unlogined.html')
 
 
 @app.route('/admin')

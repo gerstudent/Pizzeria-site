@@ -82,9 +82,8 @@ a {
 }
 
 .cart {
-    background-color: #971313;
-    padding: 7px;
-    color: #fff;
+    background-color: #FA8E47;
+    padding: 10px;
     border-radius: 7px;
 }
 
@@ -406,17 +405,4 @@ article {
     color: white;
     text-decoration: none;
 
-}
-
-.acc {
-    font-size: 1.1em !important;
-    background-color: #3458;
-    padding: 7px;
-    border-radius: 7px;
-}
-.cart {
-    font-size: 1.1em !important;
-    background-color: #3458;
-    padding: 7px;
-    border-radius: 7px;
 }
