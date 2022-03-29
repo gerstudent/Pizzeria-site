@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     color: black;
     font-size: 16px;
 }
@@ -60,8 +60,7 @@ a {
     font-size: 35px;
     font-weight: 600;
     padding-left: 50px;
-    font-family: "Montserrat", Roboto, Lato, Noto Sans, Arial, sans-serif;
-
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
 }
 
 .navbar-brad img {
@@ -74,7 +73,7 @@ a {
 
 .navbar-nav a {
     color: #222;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
 }
 
 .nav-link {
@@ -96,7 +95,7 @@ header {
     padding: 10px; 
     background: #007765; 
     color: #fff;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     font-weight: 100px;
     font-size: 15px;
 
@@ -131,7 +130,7 @@ header h2 {
 .block-header-white h3 {
     font-size: 1.8em;
     color: #971313;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     font-weight: 300;
     line-height: 1.0;
 }
@@ -139,7 +138,7 @@ header h2 {
 .block-header-white h2 {
     font-size: 3.0em;
     color: #121619;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
@@ -182,7 +181,7 @@ ul.footer-content {
 ul.footer-content li a {
     color: #ddd;
     display: block;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 35px;
     text-decoration: none;
@@ -302,14 +301,14 @@ ul.footer-content.box-information li a {
     width: 20%;
     margin-right: 4%;
     margin-bottom: 20px;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 16px;
 }
 
 .deliv .title {
     margin: 0px 0px 5px;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #BD0F0F;
@@ -364,7 +363,7 @@ article {
     font-weight: 600;
     font-size: 28px;
     color: #000000;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
 }
 
 
@@ -377,7 +376,7 @@ article {
 .price {
     font-size: 20px;
     font-weight: 500;
-    font-family: "Ubuntu", Montserrat, Lato, Noto Sans, Roboto, sans-serif;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
     color: black;
     display: block;
     margin-bottom: 12px;
