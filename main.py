@@ -16,15 +16,26 @@ db = SQLAlchemy(app)
 ADMIN_FLAG = False
 USER_FLAG = False
 
+# список пицц
+products = [{'id': 1, 'img_href': '../static/img/pizza2.jpg', 'name': 'Маргарита', 'price': 500},
+            {'id': 2, 'img_href': '../static/img/pizza2.jpg', 'name': 'Маргарита', 'price': 500}]
+
+# пример корзины
+cart = []
+
 
 # главная страница
 @app.route('/')
 @app.route('/main')
 def main():
-    if USER_FLAG:
-        return render_template('header_logined.html')
-    else:
-        return render_template('header_unlogined.html')
+    return render_template('index.html', len=len(products), products=products)
+
+
+@app.route('/add_to_cart/<id>/', methods=['POST'])
+def add_to_cart(id):
+    cart.append({'id': id, 'qty': 1, 'ing': [], 'size': 20})
+    print(cart)
+    return redirect('/')
 
 
 # класс пользователя

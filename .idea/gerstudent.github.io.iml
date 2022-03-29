@@ -10,4 +10,11 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="all" level="application" />
   </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/templates" />
+      </list>
+    </option>
+  </component>
 </module>

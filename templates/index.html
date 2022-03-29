@@ -68,59 +68,18 @@
     <div class = "pizzass">
         <div class="container-pizz"><br>
             <div class="pizzas">
+                {%for i in range(len)%}
               <div class="pizza">
-                <img src="../static/img/pizza2.jpg" alt="Пицца">
+                <img src="{{products[i]['img_href']}}" alt="Пицца">
                 <div class="product-list">
-                        <h3 class = "pizza-name">Маргарита</h3>
-                        <span class="price">500 ₽</span>
-                        <a href="" class="button">В корзину</a>
+                        <h3 class = "pizza-name">{{products[i]['name']}}</h3>
+                        <span class="price">{{products[i]['price']}} ₽</span>
+                        <form action="/add_to_cart/{{i + 1}}/" method="POST">
+                            <input type="submit" class="button" value="В корзину">
+                        </form>
                 </div>
               </div>
-
-              <div class="pizza">
-                <img src="../static/img/pizza-margarita.jpg" alt="Пицца">
-                <div class="product-list">
-                        <h3 class = "pizza-name">Маргарита</h3>
-                        <span class="price">500 ₽</span>
-                        <a href="" class="button">В корзину</a>
-                </div>
-              </div>
-
-              <div class="pizza">
-                <img src="../static/img/pizza3.png" alt="Пицца">
-                <div class="product-list">
-                        <h3 class = "pizza-name">Маргарита</h3>
-                        <span class="price">500 ₽</span>
-                        <a href="" class="button">В корзину</a>
-                </div>
-              </div>
-
-              <div class="pizza">
-                <img src="../static/img/pizza4.jpg" alt="Пицца">
-                <div class="product-list">
-                        <h3 class = "pizza-name">Маргарита</h3>
-                        <span class="price">500 ₽</span>
-                        <a href="" class="button">В корзину</a>
-                </div>
-              </div>
-
-              <div class="pizza">
-                <img src="../static/img/pizza5.png" alt="Пицца">
-                <div class="product-list">
-                        <h3 class = "pizza-name">Маргарита</h3>
-                        <span class="price">500 ₽</span>
-                        <a href="" class="button">В корзину</a>
-                </div>
-              </div>
-
-              <div class="pizza">
-                <img src="../static/img/pizza6.jpg" alt="Пицца">
-                <div class="product-list">
-                        <h3 class = "pizza-name">Маргарита</h3>
-                        <span class="price">500 ₽</span>
-                        <a href="" class="button">В корзину</a>
-                </div>
-              </div>
+                {%endfor%}
             </div>
         </div>
       </div>
