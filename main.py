@@ -38,7 +38,6 @@ def add_to_cart(id):
     return redirect('/')
 
 
-# класс пользователя
 class User(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
     name = db.Column(db.String(100))
@@ -74,6 +73,11 @@ def admin_login():
         ADMIN_FLAG = True
         return redirect('/admin')
     return render_template('admin_login.html', title='Авторизация', form=form)
+
+#
+# @app.route('/cart', methods=['GET', 'POST'])
+# def cart():
+#     return render_template('cart.html', len=len(cart), cart=cart)
 
 
 # страница поиска
