@@ -17,10 +17,14 @@ ADMIN_FLAG = False
 USER_FLAG = False
 
 # список пицц
-products = [{'id': 1, 'img_href': '../static/img/pizza2.jpg', 'name': 'Маргарита', 'price': 500},
-            {'id': 2, 'img_href': '../static/img/pizza2.jpg', 'name': 'Маргарита', 'price': 500}]
+products = [{'id': 1, 'img_href': '../static/img/margarita.jpg', 'name': 'Маргарита', 'price': 500},
+            {'id': 2, 'img_href': '../static/img/pepperoni.jpg', 'name': 'Пепперони', 'price': 500},
+            {'id': 3, 'img_href': '../static/img/napoleon.jpg', 'name': 'Наполеон', 'price': 500},
+            {'id': 4, 'img_href': '../static/img/olivki.jpg', 'name': 'Оливки', 'price': 500},
+            {'id': 5, 'img_href': '../static/img/peres.jpg', 'name': 'Перес', 'price': 500},
+            {'id': 6, 'img_href': '../static/img/caprichoza.jpg', 'name': 'Капричоза', 'price': 500}]
 
-# пример корзины
+# корзина
 cart = []
 
 
