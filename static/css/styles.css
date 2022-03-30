@@ -11,20 +11,23 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 60px;
+    text-transform: uppercase;
+
 }
 
 h3 {
     font-size: 25px;
-    margin-bottom: 28px;
+    margin-top: 50px ;
+    margin-bottom: 20px;
 }
 
 section {
@@ -42,7 +45,7 @@ ul, li {
     margin: 0;
 }
 
-.container {
+.containerr {
     width: 1170px;
     margin: 0 auto;
 }
@@ -404,4 +407,85 @@ article {
     color: white;
     text-decoration: none;
 
+}
+
+/* ========================*/
+/* Модальное окно          */
+/* ========================*/
+.modname {
+    font-size: 40px;
+    margin: 0 auto;
+}
+.modtext {
+    text-align: left;
+}
+.modalDialog {
+    overflow: hidden;
+    position: fixed;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.modalDialog > div {
+    width: 800px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #BD0F0F;
+}
+
+/* ========================*/
+/* Модальное окно          */
+/* ========================*/
+.btn-group {
+
+}
+
+.pizmodal {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 530px;
+    max-height: 610px;
 }

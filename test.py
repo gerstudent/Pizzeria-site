@@ -1,5 +1,5 @@
 # для радио баттон
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import RadioField
 
@@ -18,7 +18,8 @@ class SimpleForm(FlaskForm):
 @app.route('/', methods=['post', 'get'])
 def hello_world():
     form = SimpleForm()
-    if form.validate_on_submit():
+    if form.validate_on_submit() or request.method == 'POST':
+        print(request.form.getlist('hello'))
         print(form.example.data)
     else:
         print(form.errors)
