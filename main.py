@@ -54,7 +54,7 @@ def main():
         else:
             cart.append(
                 {'id': request.form.get('ID'), 'ing': request.form.getlist('ing'), 'size': form.example.data,
-                 'qty': int(request.form.get('qty'))})я
+                 'qty': int(request.form.get('qty'))})
     else:
         print(form.errors)
     print(cart)
