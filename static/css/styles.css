@@ -77,6 +77,7 @@ a {
 .navbar-nav a {
     color: #222;
     font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
+    text-decoration: none;
 }
 
 .nav-link {
@@ -152,7 +153,7 @@ header h2 {
 
 /* =================================== */
 /*  14. Footer-Area
-/* =================================== */
+/* ===================================
 
 .footer {
     background: #740B0B none repeat scroll 0 0;
@@ -217,9 +218,11 @@ ul.footer-content.box-information li a {
     color: #26acce;
 }
 
+*/
+
 /* =================================== */
 /*  Social-icons
-/* =================================== */
+/* ===================================
 
 .social-icons {
     text-align: center;
@@ -242,10 +245,11 @@ ul.footer-content.box-information li a {
     margin-right: 3px;
 }
 
-/* =================================== */
+=================================== */
 /*  Footer-Area
 /* =================================== */
 
+/*
 @media screen and (max-width: 1200px) {
     .container {
         width: 1140px;
@@ -327,10 +331,12 @@ ul.footer-content.box-information li a {
 article {
     display: block;
 }
+ */
 
 /* =================================== */
 /* Pizza-card
 /* =================================== */
+/*
 .container-pizz {
     max-width: 1200px;
     width: 100%;
@@ -369,8 +375,6 @@ article {
     font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
 }
 
-
-/* ///////////////// */
 .product-list {
     background: #fafafa;
     padding: 15px 0;
@@ -385,16 +389,6 @@ article {
     margin-bottom: 12px;
 }
 
-.button {
-    text-decoration: none;
-    display: inline-block;
-    padding: 4px 12px 4px 12px;
-    background: #cccccc;
-    color: white;
-    font-size: 18px;
-    line-height: 28px;
-    transition: .3s ease-in;
-}
 
 .product-item:hover .button {
     background: #740B0B;
@@ -406,8 +400,9 @@ article {
     background: #740B0B;
     color: white;
     text-decoration: none;
-
 }
+
+*/
 
 /* ========================*/
 /* Модальное окно          */
@@ -488,4 +483,64 @@ article {
     vertical-align: top;
     width: 530px;
     max-height: 610px;
+}
+
+/* ========================*/
+/* Bootstrap          */
+/* ========================*/
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.card-text {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cardname {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
+}
+
+.cardname:hover {
+    text-decoration: none;
+}
+
+.prisepiz {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Montserrat', Roboto, Arial, "Open Sans", sans-serif;
+    color: black;
+    display: block;
+    margin-top: 12px;
+}
+
+.btn-outline-primary {
+    background-color: #e57878;
+    border-color: #e57878;
+    color: #FFF;
+}
+
+.btn-outline-primary:hover{
+    color: #FFF;
+    background-color: #BD0F0F;
+    border-color: #BD0F0F;
+
+}
+
+.order-title {
+    margin-bottom: 35%;
 }
